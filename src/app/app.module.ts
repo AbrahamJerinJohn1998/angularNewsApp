@@ -5,7 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LiveNewsComponent } from './live-news/live-news.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+// const myRoute:Routes=[
+//   {
+//     path:"",
+//     component:LiveNewsComponent
+//   }
+// ]
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +21,9 @@ import { LiveNewsComponent } from './live-news/live-news.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+   AppRoutingModule,
+   HttpClientModule
+    // RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
